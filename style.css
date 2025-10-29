@@ -1,0 +1,53 @@
+/* Custom Styling for The Easy Fix */
+
+/* Body/Background Styling */
+body {
+    background-color: #f8f9fa; /* Light grey background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Primary Color for Branding (used on the navbar) */
+.bg-primary {
+    background-color: #007bff !important; /* Standard Bootstrap Blue */
+}
+
+/* Card Styling for Better Design */
+.fixer-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none; /* Remove default border */
+    border-radius: 0.75rem; /* Rounded corners */
+    overflow: hidden;
+}
+
+/* Hover Effect for Cards */
+.fixer-card:hover {
+    transform: translateY(-5px); /* Lift the card slightly */
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; /* Stronger shadow on hover */
+}
+
+/* Card Header Styling */
+.card-header-custom {
+    background-color: #e9ecef;
+    font-weight: bold;
+    color: #343a40;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+/* Icon Styling */
+.card-body i {
+    width: 20px;
+    color: #007bff; /* Icon color */
+}
+
+/* Responsive Font Size on Title */
+.display-4 {
+    font-size: 2.5rem;
+}
+@media (min-width: 992px) {
+    .display-4 {
+        font-size: 3.5rem;
+    }
+}
